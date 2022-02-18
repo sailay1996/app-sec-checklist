@@ -1,0 +1,84 @@
+Mobile (iOS) Application Penetration Testing Checklist
+
+- **Information Gathering**
+    - [ ]  Testing for Common Libraries and Fingerprinting
+    - [ ]  Enumeration of Application Known Controllers
+    - [ ]  Information Disclosure by Apple System Log (ASL)
+- **Application Local Storage Flaw**
+    - [ ]  Hidden Secrets in the Code
+    - [ ]  Storing Sensitive Data on Shared Storage
+    - [ ]  Storing Sensitive Data in application Cache files
+    - [ ]  Cryptographic Based Storage Strength
+    - [ ]  Content Providers Access Permissions
+    - [ ]  Content Providers SQL Injection
+    - [ ]  Privacy and Metadata Leaks
+- **IPC Security**
+    - [ ]  User Propriety Data in ASL
+    - [ ]  Technical Valuable Data in ASL
+    - [ ]  Exposed Components and Cross Application Authorization
+    - [ ]  Permissions & Digital Signature Data Sharing Issues
+    - [ ]  Clipboard Separation
+    - [ ]  Code Puzzling and Abusing Application State
+    - [ ]  Race Conditions, Deadlocks and Concurrency Threats
+    - [ ]  In Device Denial of Service attacks
+- **Privacy Breaches**
+    - [ ]  Exposing Device Specific Identifiers in Attacker Visible Elements
+    - [ ]  Exposure of Private User Data to Attacker Visible Components
+    - [ ]  Tracking Application Installations in Insecure Means
+- **UI Security**
+    - [ ]  Tap Jacking
+    - [ ]  Client Side based Authorization Decisions
+- **Business Logic Testing**
+    - [ ]  Bypassing business logic
+    - [ ]  Bypassing controllers hierarchy
+- **Execution of Untrusted Code**
+    - [ ]  WebView Security
+    - [ ]  Exposing External Java Interfaces in WebViews DOM
+    - [ ]  JavaScript Execution Risks at WebViews
+    - [ ]  Code Signing
+    - [ ]  Abusing Dynamic Code Execution Decisions
+    - [ ]  Stack Based Buffer Overflows
+    - [ ]  Heap Based Buffer Overflows
+    - [ ]  Object Lifetime Vulnerabilities (Use-after-free, double free’s)
+    - [ ]  Format Strings Vulnerabilities
+    - [ ]  Integer Overflows
+    - [ ]  Integer Underflows
+- **Transport Layer Security**
+    - [ ]  Insecure Transport Layer Protocols
+    - [ ]  TLS Authenticity Flaws
+    - [ ]  TLS Weak Encryption
+    - [ ]  Bypassing TLS Certificate Pinning
+    - [ ]  TLS Known Issues – CRIME, BREACH, BEAST, Lucky13, RC4, etc…
+    - [ ]  Disable certificate validation
+- **Authentication Flaws**
+    - [ ]  Using Insecure Authentication Vectors (IMEI, MAC, etc..)
+    - [ ]  Cross Application Authentication
+    - [ ]  Local Authentication Bypass Threats
+    - [ ]  Client Side Based Authentication Flaws
+    - [ ]  Client Side Authorization Breaches
+- **Application Sandbox Security**
+    - [ ]  Shared User Resources
+    - [ ]  Excessive Permissions
+    - [ ]  Disclosure of Privileged Data to Public Resources
+- **Application Keychain Security**
+    - [ ]  Keychain Resources
+    - [ ]  Misuse of keychain storage
+    - [ ]  Developer Group Keychain usage
+- **look into interesting things:**
+    - [ ]  Plist Files
+    - [ ]  NSUserDefaults
+    - [ ]  Sqlite Data Files
+    - [ ]  Keychain
+    - [ ]  Cached Copy
+    - [ ]  Firebase
+    - [ ]  Certificate pinning / bypass it
+    - [ ]  Root detection / bypass it
+- **Run Scanner**
+    - [ ]  MobSF (Recommended)
+- **Tools**
+   - [ ]  Frida
+   - [ ]  Objection
+- **Resource:**
+    - [ ]  https://cobalt.io/blog/ios-pentesting-101
+    - [ ]  https://book.hacktricks.xyz/mobile-apps-pentesting/ios-pentesting-checklist
+    - [ ]  https://mobexler.com/checklist.htm
