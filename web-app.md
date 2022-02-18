@@ -312,19 +312,19 @@ Web Application Penetration Testing Checklist
         
 - **Cross-Site Scripting Testing**
     - [ ]  Try XSS using QuickXSS tool by theinfosecguy
-    - [ ]  Upload file using '"><img src=x onerror=alert(document.domain)>.txt
+    - [ ]  Upload file using `'"><img src=x onerror=alert(document.domain)>.txt`
     - [ ]  If script tags are banned, use <h1> and other HTML tags
     - [ ]  If output is reflected back inside the JavaScript as a value of any variable just use alert(1)
-    - [ ]  if " are filtered then use this payload /><img src=d onerror=confirm(/tushar/);>
+    - [ ]  if " are filtered then use this payload `/><img src=d onerror=confirm(/tushar/);>`
     - [ ]  Upload a JavaScript using Image file
     - [ ]  Unusual way to execute your JS payload is to change method from POST to GET. It bypasses filters sometimes
     - Tag attribute value
-        - [ ]  Input landed -<input type=”text” name=”state” value=”INPUT_FROM_ USER”>
-        - [ ]  Payload to be inserted -“ onfocus=”alert(document.cookie)"
-    - [ ]  Syntax Encoding payload “%3cscript%3ealert(document.cookie)%3c/script%3e"
+        - [ ]  Input landed -`<input type=”text” name=”state” value=”INPUT_FROM_ USER”>`
+        - [ ]  Payload to be inserted -` onfocus=”alert(document.cookie)`
+    - [ ]  Syntax Encoding payload `%3cscript%3ealert(document.cookie)%3c/script%3e`
     - XSS filter evasion
-        - [ ]  < and > can be replace with html entities &lt; and &gt;
-        - [ ]  You can try an XSS polyglot.Eg:-javascript:/*-></title></style></textarea></script></xmp><svg/onload='+/"/+/onmouseover=1/+/[*/[]/+alert(1)//'>
+        - [ ]  `< and > can be replace with html entities &lt; and &gt;`
+        - [ ]  `You can try an XSS polyglot.Eg:-javascript:/*-></title></style></textarea></script></xmp><svg/onload='+/"/+/onmouseover=1/+/[*/[]/+alert(1)//'>`
     - XSS Firewall Bypass
         - [ ]  Check if the firewall is blocking only lowercase
         - [ ]  Try to break firewall regex with the new line(\r\n)
