@@ -1,4 +1,69 @@
 Mobile (Android) Application Penetration Testing Checklist
+- **Information Gathering**
+    - [ ]  Reverse Engineering the Application Code
+    - [ ]  Testing for Common Libraries and Fingerprinting
+    - [ ]  Enumeration of Application Known Controllers
+    - [ ]  Information Disclosure by Logcat
+- **Application Local Storage Flaw**
+    - [ ]  Hidden Secrets in the Code
+    - [ ]  Storing Sensitive Data on Shared Storage (exposed to all applications without any restrictions)
+    - [ ]  Cryptographic Based Storage Strength
+    - [ ]  Content Providers Access Permissions
+    - [ ]  Content Providers SQL Injection
+    - [ ]  Privacy and Metadata Leaks
+- **IPC Security**
+    - [ ]  User Propriety Data in Logcat
+    - [ ]  Technical Valuable Data in Logcat
+    - [ ]  Exposed Components and Cross Application Authorization
+    - [ ]  Permissions & Digital Signature Data Sharing Issues
+    - [ ]  Clipboard Separation
+    - [ ]  Public Intents and Unauthenticated Data Sources
+    - [ ]  Public Intents and Authorization Flaws
+    - [ ]  Code Puzzling and Abusing Application State
+    - [ ]  Race Conditions, Deadlocks and Concurrency Threats
+    - [ ]  In Device Denial of Service attacks
+- **Privacy Breaches**
+    - [ ]  Exposing Device Specific Identifiers in Attacker Visible Elements
+    - [ ]  Exposure of Private User Data to Attacker Visible Components
+    - [ ]  Tracking Application Installations in Insecure Means
+- **UI Security**
+    - [ ]  Tap Jacking
+    - [ ]  Client Side based Authorization Decisions
+- **Business Logic Testing**
+    - [ ]  Bypassing business logic
+- **Execution of Untrusted Code**
+    - [ ]  WebView Security
+    - [ ]  Exposing External Java Interfaces in WebViews DOM
+    - [ ]  JavaScript Execution Risks at WebViews
+    - [ ]  Code Signing
+    - [ ]  Loading Dynamic DEX onto Dalvik
+    - [ ]  Abusing Dynamic Code Execution Decisions
+    - [ ]  Stack Based Buffer Overflows
+    - [ ]  Heap Based Buffer Overflows
+    - [ ]  Object Lifetime Vulnerabilities (Use-after-free, double free’s)
+    - [ ]  NDK Exposed Code Secrets
+    - [ ]  Format Strings Vulnerabilities
+    - [ ]  Integer Overflows
+    - [ ]  Integer Underflows
+- **Transport Layer Security**
+    - [ ]  Insecure Transport Layer Protocols
+    - [ ]  TLS Authenticity Flaws
+    - [ ]  TLS Weak Encryption
+    - [ ]  Bypassing TLS Certificate Pinning
+    - [ ]  TLS Known Issues – CRIME, BREACH, BEAST, Lucky13, RC4, etc…
+    - [ ]  Disable certificate validation
+- **Authentication Flaws**
+    - [ ]  Using Insecure Authentication Vectors (IMEI, MAC, etc..)
+    - [ ]  Cross Application Authentication
+    - [ ]  Local Authentication Bypass Threats
+    - [ ]  Client Side Based Authentication Flaws
+    - [ ]  Client Side Authorization Breaches
+- **Android Sandbox Security**
+    - [ ]  Shared User Resources
+    - [ ]  Excessive Permissions
+    - [ ]  Disclosure of Privileged Data to Public Resources
+    
+- **+++Additional+++**
 
 - **Memory/Storage Analysis**
     - [ ]  Sensitive information disclosed in storage of the mobile device
